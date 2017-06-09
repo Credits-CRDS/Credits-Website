@@ -2,27 +2,37 @@
  * CRDS - Custom JS
  *
  * ------------------------------------------------------------------- */
+
+
 $(function() {
   $('#choose-cpu').hide();
   $('#hideme').hide();
 })
     function showTheTime() {
+		//set current time according to UTC timezone
         var s = moment().tz("Atlantic/Azores").format();
         return s
     }
+	
+	function expiryTime() {
+		//set expiry time according to UTC timezone.
+		var e = moment("2017-06-07 14:50").tz("Atlantic/Azores").format()
+		return e
+	}
+	
  window.setInterval(function(){
     var current = showTheTime();
-    var expiry  = new Date("June 17, 2017 23:00:00").toISOString() // 10PM UTC
+    var expiry  = expiryTime()
       if(current < expiry) {
         $('#choose-cpu').hide();
         $('#hideme').show();
-        console.log('Curr: ' + current)
-        console.log('Exp: ' + expiry)
+		console.log(current)
+		console.log(expiry)
       }
       else {
         $('#choose-cpu').show();
         $('#hideme').hide();
-        console.log('Curr: ' + current)
-        console.log('Exp: ' + expiry)
+		console.log(current)
+		console.log(expiry)
       }
    }, 3000);
