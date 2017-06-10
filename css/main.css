@@ -20,7 +20,8 @@
  *  13. specifications
  *  14. community
  *  15. rewards
- *  16. guides
+ *  16. documents
+ *  16. roadmap
  *
  * =================================================================== */
    
@@ -1862,8 +1863,6 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   }
 }
 
-
-
 /* ===================================================================
  *  11. about - (_layout.scss)
  *
@@ -2485,11 +2484,11 @@ button {
 }
 
 /* ===================================================================
- *  16. guides - (_layout.scss)
+ *  16. documents - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
 
-#guides {
+#documents {
   background: #009cff;
   color: #b4e1fd;
   padding-top: 7rem;
@@ -2497,11 +2496,11 @@ button {
   text-align: center;
 }
 
-#guides h1 {
+#documents h1 {
   color: #ffffff;
 }
 
-#guides h1::before {
+#documents h1::before {
   background-color: #0287db;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -2509,28 +2508,28 @@ button {
   transform: translateX(-50%);
 }
 
-#guides .lead {
+#documents .lead {
   color: #b4e1fd;
   margin-top: 4.8rem;
 }
 
-#guides .row {
+#documents .row {
   max-width: 800px;
 }
 
-#guides .guides-badges {
+#documents .documents-badges {
   list-style: none;
   margin: 0;
   text-align: center;
 }
 
-#guides .guides-badges li {
+#documents .documents-badges li {
   display: inline-block;
   margin: 0 7.5px;
   padding-left: 0;
 }
 
-#guides .guides-badges li a {
+#documents .documents-badges li a {
   display: block;
   width: 230px;
   height: 71px;
@@ -2557,11 +2556,11 @@ button {
 
 /* -------------------------------------------------------------------
  * responsive:
- * guides
+ * documents
  * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 768px) {
-  #guides .guides-badges li a {
+  #documents .documents-badges li a {
     width: 194px;
     height: 60px;
     background-size: 194px 60px;
@@ -2569,7 +2568,134 @@ button {
 }
 
 /* ===================================================================
- *  15. footer styles - (_site-layout.scss)
+ *  17. roadmap - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+
+#roadmap {
+  min-height: 786px;
+  background: #ffffff;
+  padding-top: 18rem;
+  padding-bottom: 7rem;
+  overflow: hidden;
+}
+
+.roadmap-intro {
+  padding-bottom: 3.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.roadmap-features .features-list {
+  padding-top: 5.4rem;
+}
+
+.roadmap-features .feature {
+  margin-bottom: 1.8rem;
+}
+
+.roadmap-features .feature .icon {
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.roadmap-features .feature .icon i {
+  color: #0287db;
+  font-size: 4.8rem;
+}
+
+.roadmap-features .feature h3 {
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 1.9rem;
+  color: #151515;
+  margin-bottom: 3rem;
+}
+
+.roadmap-how {
+  padding-top: 7.2rem;
+  padding-bottom: 6rem;
+}
+
+.roadmap-how h1.intro-header {
+  text-align: center;
+}
+
+#roadmap .roadmap-how h1.intro-header::before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.roadmap-how-content {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 300px;
+  margin-top: 7.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+
+.roadmap-how-content::before,
+.roadmap-how-content::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+}
+
+.roadmap-how-content::before {
+  left: 0;
+}
+
+.roadmap-how-content::after {
+  left: 50%;
+}
+
+.roadmap-how-content .roadmap-how-steps {
+  width: 100%;
+}
+
+.roadmap-how-content .step {
+  padding: 0 40px 1.5rem 60px;
+  position: relative;
+  min-height: 240px;
+}
+
+.roadmap-how-content .step h3 {
+  margin-bottom: 2.4rem;
+}
+
+.roadmap-how-content .step::before {
+  display: block;
+  font-family: "muli-bold";
+  font-size: 2rem;
+  content: attr(data-item);
+  color: #ffffff;
+  height: 54px;
+  width: 54px;
+  line-height: 54px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #0287db;
+  box-shadow: 0 0 0 15px #ffffff;
+  z-index: 500;
+  position: absolute;
+  top: -12px;
+  left: -27px;
+}
+
+.roadmap-bottom-image img {
+  vertical-align: bottom;
+}
+
+
+/* ===================================================================
+ *  18. footer styles - (_site-layout.scss)
  *
  * ------------------------------------------------------------------- */
 
