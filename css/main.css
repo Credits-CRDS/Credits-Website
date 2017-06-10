@@ -2580,6 +2580,11 @@ button {
   overflow: hidden;
 }
 
+#roadmap .lead {
+  color: #b4e1fd;
+  margin-top: 4.8rem;
+}
+
 .roadmap-intro {
   padding-bottom: 3.6rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
@@ -2700,7 +2705,7 @@ button {
  * ------------------------------------------------------------------- */
 
 section footer {
-background: #009cff;
+  background: #009cff;
 }
 
 footer {

@@ -5,3 +5,7 @@ header#header.row {
 #go-top a, #go-top a:visited {
   background: #0287db;
 }
+
+div#google_translate_element {
+  padding-top: 1em
+}
