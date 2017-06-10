@@ -2,6 +2,6 @@ header#header.row {
   max-width: 100%;
 }
 
-div#go-top {
-  
+#go-top a, #go-top a:visited {
+  background: #0287db;
 }
