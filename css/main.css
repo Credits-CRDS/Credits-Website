@@ -2321,6 +2321,18 @@ button {
  *
  * ------------------------------------------------------------------- */
 
+img.slack  {
+  max-width: 40%;
+  float: left;
+  padding-top:30pt;
+}
+
+img.btctlk {
+  max-width: 40%;
+  float: right;
+  padding-top:10pt;
+}
+
 #community {
   background: #009cff;
   color: #b4e1fd;
@@ -2571,6 +2583,10 @@ button {
  *  17. roadmap - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
+
+img.roadmap {
+  max-width:70%;
+}
 
 #roadmap {
   min-height: 500px;
