@@ -24,7 +24,7 @@
  *  16. roadmap
  *
  * =================================================================== */
-   
+
 
 /* ===================================================================
  *  01. webfonts and iconfonts - (_document-setup)
@@ -2573,10 +2573,10 @@ button {
  * ------------------------------------------------------------------- */
 
 #roadmap {
-  min-height: 786px;
+  /*min-height: 786px;*/
   background: #ffffff;
-  padding-top: 18rem;
-  padding-bottom: 7rem;
+  padding-top: 5rem;
+  padding-bottom: 0rem;
   overflow: hidden;
 }
 
@@ -2699,12 +2699,16 @@ button {
  *
  * ------------------------------------------------------------------- */
 
+section footer {
+background: #009cff;
+}
+
 footer {
-  padding-top: 7rem;
+  padding-top: 1rem;
   padding-bottom: 4.2rem;
   font-size: 1.5rem;
   line-height: 2.7rem;
-  color: rgba(255, 255, 255, 0.25);
+  color: rgb(255, 255, 255);
 }
 
 footer a,
@@ -2750,7 +2754,7 @@ footer ul a:visited {
 }
 
 .footer-bottom {
-  margin-top: 7rem;
+  margin-top: 4rem;
   text-align: center;
 }
 
