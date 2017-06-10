@@ -2573,7 +2573,7 @@ button {
  * ------------------------------------------------------------------- */
 
 #roadmap {
-  /*min-height: 786px;*/
+  min-height: 500px;
   background: #ffffff;
   padding-top: 5rem;
   padding-bottom: 0rem;
