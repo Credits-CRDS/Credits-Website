@@ -40,9 +40,9 @@
  *  02. base style overrides - (_document-setup)
  *
  * ------------------------------------------------------------------- */
- body {
+ /*body {
      overflow: hidden;
- }
+ }*/
 
 html {
   font-size: 10px;
