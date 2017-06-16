@@ -1373,12 +1373,13 @@ h1.intro-header::before {
   }
   #header-nav-wrap {
     display: none;
-    height: auto;
+    height: 450px;
     width: 100%;
     right: auto;
     left: 0;
     background-color: #111111;
     padding: 120px 40px 54px;
+    overflow-y: scroll;
   }
   #header-nav-wrap .header-main-nav {
     display: block;
@@ -1557,7 +1558,7 @@ h1.intro-header::before {
 .home-social-list {
   position: absolute;
   right: 42px;
-  top: 50%;
+  top: 30%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1600,7 +1601,7 @@ h1.intro-header::before {
 
 .home-scrolldown {
   position: absolute;
-  bottom: 0;
+  bottom: 150px;
   right: 0;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -1778,12 +1779,12 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   #home,
   .home-content {
     display: block;
-    text-align: center;
+    text-align: left;
   }
   .home-content-left {
     width: 94%;
     position: static;
-    padding: 15rem 6rem 366px;
+    padding: 11rem 6rem 366px;
     margin: 0 auto;
   }
   .home-content-left h1 {
@@ -1800,7 +1801,13 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     transform: translateX(-50%);
     padding: 0;
     margin-bottom: -378px;
+    display: none;
   }
+  .home-social-list {
+    display:none;
+  }
+  .row.contents {
+  max-height: 300pt;}
 }
 
 @media only screen and (max-width: 768px) {
@@ -1994,6 +2001,11 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
  * responsive:
  * about
  * ------------------------------------------------------------------- */
+@media only screen and (max-width: 900px) {
+ #about {
+    padding-top: 10rem;
+  }
+}
 
 @media only screen and (max-width: 1200px) {
   .about-how-content {
@@ -2316,6 +2328,21 @@ button {
   vertical-align: bottom;
 }
 
+@media only screen and (max-width: 768px) {
+  .specs-header {
+    font-size: 2.5rem !important;
+  }
+  img.masternode {
+    padding-top: 0pt;
+  }
+  .specifications-intro {
+    text-align: -webkit-center;
+  }
+  .specifications-intro .col-four h1 {
+    text-align: -webkit-left;
+  }
+}
+
 /* ===================================================================
  *  14. community - (_layout.scss)
  *
@@ -2369,6 +2396,13 @@ img.btctlk {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+
+@media only screen and (max-width: 768px) {
+  h1.community-header {
+    font-size: 2.5rem !important;
+  }
+}
+
 
 /* ===================================================================
  *  15. Rewards - (_layout.scss)
@@ -2585,7 +2619,7 @@ button {
  * ------------------------------------------------------------------- */
 
 img.roadmap {
-  max-width:70%;
+  max-width:75%;
 }
 
 #roadmap {
@@ -2712,6 +2746,17 @@ img.roadmap {
 
 .roadmap-bottom-image img {
   vertical-align: bottom;
+}
+
+/* -------------------------------------------------------------------
+ * responsive:
+ * roadmap
+ * ------------------------------------------------------------------- */
+
+ @media only screen and (max-width: 768px) {
+  img.roadmap {
+    max-width:100%;
+  }
 }
 
 
@@ -2905,3 +2950,4 @@ footer ul a:visited {
 
 
 /*# sourceMappingURL=main.css.map */
+L=main.css.map */

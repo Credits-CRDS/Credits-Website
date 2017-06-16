@@ -27,7 +27,7 @@ getexpirytime = function() {
   // get the current time in the show's timezone
   utc = local.getTime() + (local.getTimezoneOffset() * 60000);
   expiry = new Date(utc + (3600000*timezone));
-  expiry.setUTCDate(10)
+  expiry.setUTCDate(17)
   expiry.setHours(22,00,00,00)
 return expiry
 
