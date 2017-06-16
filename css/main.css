@@ -40,6 +40,9 @@
  *  02. base style overrides - (_document-setup)
  *
  * ------------------------------------------------------------------- */
+ body {
+     overflow: hidden;
+ }
 
 html {
   font-size: 10px;
@@ -1358,12 +1361,58 @@ h1.intro-header::before {
  * responsive:
  * header
  * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+  /*.header-logo a {
+    width: 88px;
+    height: 20px;
+    background-size: 88px 20px;
+  }*/
+  #header-nav-wrap {
+    display: none;
+    height: 450px;
+    width: 100%;
+    right: auto;
+    left: 0;
+    background-color: #111111;
+    padding: 120px 40px 54px;
+    overflow-y: scroll;
+  }
+  #header-nav-wrap .header-main-nav {
+    display: none;
+    height: auto;
+    margin: 0 0 4.2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+  }
+  #header-nav-wrap .header-main-nav li {
+    display: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  }
+  #header-nav-wrap .header-main-nav li a {
+    padding: 15px 0;
+    line-height: 13px;
+  }
+  #header-nav-wrap .cta {
+    height: 42px;
+    line-height: calc(42px - .6rem);
+    padding: 0 30px;
+  }
+  .header-menu-toggle {
+    display: block;
+  }
+  .home-scrolldown {
+    display: none;
+  }
+}
+
 
 @media only screen and (max-width: 1230px) {
   #header {
     max-width: none;
   }
 }
+
 
 @media only screen and (max-width: 768px) {
   .header-logo a {
@@ -1395,7 +1444,7 @@ h1.intro-header::before {
   }
   #header-nav-wrap .header-main-nav li a {
     padding: 18px 0;
-    line-height: 18px;
+    line-height: 10px;
   }
   #header-nav-wrap .cta {
     height: 42px;
@@ -1403,7 +1452,7 @@ h1.intro-header::before {
     padding: 0 30px;
   }
   .header-menu-toggle {
-    display: block;
+    display: block !important;
   }
 }
 
@@ -1425,11 +1474,11 @@ h1.intro-header::before {
  * make sure the menu is visible on larger screens
  * ------------------------------------------------------------------- */
 
-@media only screen and (min-width: 769px) {
+/*@media only screen and (min-width: 769px) {
   #header-nav-wrap {
-    display: block !important;
+    display: block;
   }
-}
+}*/
 
 
 
@@ -3019,11 +3068,6 @@ footer ul a:visited {
  #thetime {
   color: #b4e1fd !important;
 }
-
-/*# sourceMappingURL=main.css.map */
-L=main.css.map */
-
-
 
 /*# sourceMappingURL=main.css.map */
 L=main.css.map */

@@ -43,6 +43,14 @@ $(function() {
       }
   }
 
+$(window).resize(function() {
+  if($(window).width() >=1024) {
+    $('#header-nav-wrap').css('display', 'block');
+  } else {
+    $('#header-nav-wrap').css('display', '');
+  }
+});
+
 
    window.setInterval(function(){
       var current = getcurrenttime();
