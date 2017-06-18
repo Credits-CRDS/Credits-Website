@@ -40,9 +40,9 @@
  *  02. base style overrides - (_document-setup)
  *
  * ------------------------------------------------------------------- */
- /*body {
+ body {
      overflow: hidden;
- }*/
+ }
 
 html {
   font-size: 10px;
@@ -2223,10 +2223,6 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   background-repeat: no-repeat;
   background-position: center;
   background-size: 230px 71px;
-}
-
-#thetime:hover {
- cursor:pointer;
 }
 
 button {
